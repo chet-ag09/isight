@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="https://cdn.jsdelivr.net/gh/KodingKhurram/animate.css-dynamic@main/animate.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <link rel="shortcut icon" href="imgs/ico.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap" rel="stylesheet">
+    
+    <title>ISight - Object Detection For Blind and Visually Impaired</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav" id="nav">
+            <a href="javascript:void(0)" class="close" onclick="closeNav()">Close</a>
+            <a href="#home" onclick="closeNav()">Home</a>
+            <a href="#about" onclick="closeNav()">About</a>
+            <a href="app.html" onclick="closeNav()">Try ISight</a>
+        </div>
+        <span onclick="openNav()" class="open" id="open">Menu</span>
+
+
+<!--MAIN HOMW-->
+
+<section id="home">
+    <img src="imgs/LOGO.png" alt="" class="logo">
+
+    <h1>Welcome to <span class="transp">ISight</span>.</h1>
+    <p>AI Object Detector for Blind and Visually Impaired</p>
+    <a href="app.html"><button class="btn">Get Started<span>&#8594;</span></button></a>
+</section>
+
+<!--ABOUT SECTION-->
+
+<section id="about">
+    <h1>About</h1>
+    <img src="imgs/blind.svg" alt="" srcset="" loading="lazy" class="ani_fadeInLeft aniUtil_active aniUtil_dramatic">
+    <p class="ani_fadeInLeft aniUtil_active aniUtil_dramatic">The app uses Computer Vision to detect objects and identify them. The AI was built using Google's Teachable Machine and we used HTML, CSS and JavaScript to build the Front-End. Our Mission is to enable blind and visually imapired to see through their devices and know more about the world around them.</p>
+</section>
+
+
+<div class="footer">
+    <h1 class="ani_fadeInLeft aniUtil_active aniUtil_dramatic">Made for a hackathon.</h1>
+    <a href="https://github.com/chet-ag09/isight" class="ani_fadeInLeft aniUtil_active aniUtil_dramatic"><img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt=""></a>
+    <a href="https://devpost.com/submit-to/21148-techxnova-hacks/manage/submissions/506600-isight/project_details" class="ani_fadeInRight aniUtil_active aniUtil_dramatic"><img src="https://seeklogo.com/images/D/devpost-logo-95FF685C5D-seeklogo.com.png" alt=""></a>  
+</div>
+
+<script src="js/nav.js"></script>
+</body>
+</html>

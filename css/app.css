@@ -1,0 +1,85 @@
+.main
+{
+    text-align: center;
+}
+
+.open
+{
+
+}
+
+#webcam-container
+{
+    height: 200px;
+    width: 200px;
+    background-color: hsl(269, 100%, 65%);
+    margin: auto;
+    border: 2px solid rgb(94, 0, 113);
+    animation: slide-in-bottom 1s;
+
+}
+
+#label-container
+{   
+    margin-top: 20px;
+    background: #9635ff;
+    width: 250px;   
+    height: 40px;
+    margin: auto;
+    text-align: center;
+    border: 2px solid rgb(50, 0, 84);
+    animation: slide-in-bottom 1s;
+
+}
+
+.h2
+{
+    text-align: center;
+    padding-top: 10px;
+    padding: 20px 20px;
+    color: black;
+    font-size: 50px;
+
+    animation: slide-in-left 1s;
+
+    
+}
+
+.span
+{
+    -webkit-text-stroke: 1px #ffffff;
+    -webkit-text-fill-color: transparent;
+
+    color: #ffffff;
+  
+    font-weight: 900;
+    font-size: 50px;
+    text-align: center;
+}
+
+.back
+{
+    text-decoration: none;
+    font-size: 3em;
+    color: white;
+    animation: slide-in-left 1s;
+}
+
+.back:hover
+{
+    color: #7b00ff;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .h2
+    {
+        font-size: 1.2em;
+    }
+
+    .span
+    {
+        font-size: 1.2em;
+    }
+
+}
