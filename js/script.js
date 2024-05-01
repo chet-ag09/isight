@@ -77,30 +77,3 @@
             }
           }, 100);
         }
-
-
-        const flipCameraButton = document.getElementById("flip-camera");
-
-        flipCameraButton.addEventListener("click", async () => {
-          try {
-            // Stop the current webcam stream
-            await webcam.stop();
-        
-            // Check if 'facingMode' property exists (modern browsers)
-            if (webcam.facingMode) {
-              webcam.facingMode = webcam.facingMode === "user" ? "environment" : "user";
-            } else {
-              // Fallback for older browsers: Reverse logic based on 'flip' property
-              webcam.flip = !webcam.flip;
-            }
-        
-            // Restart webcam stream with the flipped configuration
-            await webcam.setup();
-            await webcam.play();
-            console.log("Camera Flipped");
-          } catch (error) {
-            // Handle error: Likely no other camera found
-            console.error("Error flipping camera:", error);
-            alert("No secondary camera detected. Reload and start camera again.");
-          }
-        });
